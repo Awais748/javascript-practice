@@ -1420,5 +1420,214 @@
 
 // console.log(unique);
 
- 
+// let arr = [9, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 7];
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length - 1; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(arr);
+
+// let arr = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+// let max = arr[0];
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+
+// console.log(max);
+
+// Stars program:
+
+// let numbers = 5;
+
+// for (let i = 1; i <= numbers; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// let numbers = 5;
+
+// for (let i = 1; i <= numbers; i++) {
+//   let row = "";
+//   for (let j = 1; j <= numbers - i + 1; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// // }
+// let arr = [1, 2, 3, 2, 4, 1, 5];
+// let unique = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let found = false;
+
+//   for (let j = 0; j < unique.length; j++) {
+//     if (arr[i] === unique[j]) {
+//       found = true;
+//       break;
+//     }
+//   }
+
+//   if (!found) {
+//     unique.push(arr[i]);
+//   }
+// }
+
+// // console.log(unique);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// array sroting 3 examples
+
+// let prices = [500, 120, 890, 45, 300];
+// for (let i = 0; i < prices.length; i++) {
+//   for (let j = 0; j < prices.length - i - 1; j++) {
+//     if (prices[j] > prices[j + 1]) {
+//       let temp = prices[j];
+//       prices[j] = prices[j + 1];
+//       prices[j + 1] = temp;
+//     }
+//   }
+// }
+
+// for (let i = 0; i < prices.length; i++) {
+//   for (let j = i + 1; j < prices.length; j++) {
+//   if (prices[i] > prices[j]) {
+//     let temp = prices[i];
+//     prices[i] = prices[j];
+//     prices[j] = temp;
+//         }
+//   }
+// }
+//   console.log(prices);
+
+// let numbers = [99, 8, 7, 6, 5, 4, 321];
+
+// let max = numbers[0];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > max) {
+//     max = numbers[i];
+//   }
+// }
+// console.log(max);
+
+// let temp = [38, 42, 35, 47, 40, 33, 45];
+
+// let max_temp = temp[0];
+
+// for (let i = 0; i < temp.length; i++) {
+//   if (temp[i] > max_temp) {
+//     max_temp = temp[i];
+//   }
+// }
+// console.log(max_temp);
+
+// let runs = [45, 78, 23, 91, 56, 34];
+// let max_runs = runs[0];
+// for (let i = 0; i < runs.length; i++) {
+//   if (runs[i] > max_runs) {
+//     max_runs = runs[i];
+//   }
+// }
+
+// console.log(max_runs);
+
+// for (let i = 0; i < 5; i++) {
+//   row = "";
+//   for (let j = 0; j < i + 1; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   let row = "";
+//   for (let j = 0; j < 5 - i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+// let arr = [1, 2, 2, 3, 4, 4, 5];
+// let unique = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let found = false;
+
+//   for (let j = 0; j < unique.length; j++) {
+//     if (arr[i] === unique[j]) {
+//       found = true;
+//       break;
+//     }
+//   }
+
+//   if (!found) {
+//     unique.push(arr[i]);
+//   }
+// }
+// console.log(unique);
+
+// let names = ["Ali", "Ahmed", "Ali", "Usman", "Ahmed"];
+// let unique = [];
+
+// for (let i = 0; i < names.length; i++) {
+//   let found = false;
+
+//   for (let j = 0; j < unique.length; j++) {
+//     if (names[i] === unique[j]) {
+//       found = true;
+//       break;
+//     }
+//   }
+
+//   if (!found) {
+//     unique.push(names[i]);
+//   }
+// }
+
+// console.log(unique);
+
+// let arr = [7, 3, 7, 1, 9, 3, 1];
+// let unique = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let found = false;
+
+//   for (let j = 0; j < unique.length; j++) {
+//     if (arr[i] === unique[j]) {
+//       found = true;
+//       break;
+//     }
+//   }
+
+//   if (!found) {
+//     unique.push(arr[i]);
+//   }
+// }
+
+// console.log(unique);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function proccess_Numbers(arr, operation) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     result[i] = operation(arr[i]);
+//   }
+//   return resul
+// t;
+// }
 
