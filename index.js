@@ -1630,4 +1630,105 @@
 //   return resul
 // t;
 // }
+// ----------- Event bubbling -------------
 
+// document.getElementById("Grand-parent").addEventListener("click", () => {
+//   console.log("grand-parent Clicked");
+// });
+// document.getElementById("Parent").addEventListener("click", () => {
+//   console.log("Parent Clicked");
+// });
+// document.getElementById("Child").addEventListener("click", (Event) => {
+//   Event.stopPropagation();
+//   console.log("Child Clicked");
+// });
+
+// document.getElementById("Parent").addEventListener("click", () => {
+//   console.log("Parent Clicked");
+// });
+
+// document.getElementById("products").addEventListener("click", (event) => {
+//   if (event.target.classList.contains("add")) {
+
+//    let card = event.target.parentElement;
+//    let productName = card.querySelector("h3").textContent;
+//    console.log(productName + " added to cart");
+
+//   }
+// });
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let result = numbers.map(function (num) {
+//   return num * num;
+// });
+// console.log(result);
+
+// function intro(name, age, school, city) {
+//   console.log(
+//     `my name is ${this.name} and my age is ${this.age} and i am from ${this.city} and i study in ${this.school}`
+//   );
+// }
+// intro.call({ name: "Awais", age: 19, school: "The educator", city: "Gujrat" });
+
+// function intro(name, age, school, city) {
+//   console.log(
+//     `my name is ${this.name} and my age is ${this.age} and i am from ${this.city} and i study in ${this.school}`
+//   );
+// }
+// intro.apply({ name: "Awais", age: 19, school: "The educator", city: "Gujrat" });
+
+// let obj = {
+//   name: "Awais",
+//   age: 19,
+//   school: "The educator",
+//   city: "Gujrat",
+//   education: "Intermediate",
+//   greet: function () {
+//     console.log(
+//       `my name is ${this.name} and my age is ${this.age} and i am from ${this.city} and i study in ${this.school}`
+//     );
+//   },
+//   edu: functions() {
+//     console.log(`my education is ${this.education}`);
+//   },
+// };
+// let greetfunc = obj.greet.bind(obj);
+// let edufunc = obj.edu.bind(obj);
+
+// greetfunc();
+// edufunc();
+
+// const user = {
+//   name: "Awais",
+//   showName: function () {
+//     console.log("User name is:", this.name);
+//   },
+// };
+
+// const connectbtn = user.showName.bind(user);
+// document.getElementById("btn").addEventListener("click", connectbtn);
+
+// const user = {
+//   name: "Awais",
+//   login: function (time) {
+//     console.log(`${this.name} logged in at ${time}`);
+//   },
+// };
+// function processLogin(callback) {
+//   setTimeout(callback, 2000);
+// }
+
+// processLogin(user.login.bind(user));
+
+let arr = [1, 3, 5, 7, 9, 0, 7, 5, 2, 7, 4];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length - 1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      let temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+    }
+  }
+}
+console.log(arr);
