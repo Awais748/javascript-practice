@@ -1720,15 +1720,99 @@
 
 // processLogin(user.login.bind(user));
 
-let arr = [1, 3, 5, 7, 9, 0, 7, 5, 2, 7, 4];
+// let arr = [1, 3, 5, 7, 9, 0, 7, 5, 2, 7, 4];
 
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr.length - 1; j++) {
-    if (arr[j] > arr[j + 1]) {
-      let temp = arr[j];
-      arr[j] = arr[j + 1];
-      arr[j + 1] = temp;
-    }
-  }
-}
-console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length - 1; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 89, 8, 7, , 6, 5, 43, 21];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+// for (let i = 0; i <= 5; i++) {
+//   row = " ";
+//   for (let j = 0; j <= i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+// for (let i = 5; i > 0; i--) {
+//   row = " ";
+//   for (let j = 0; j < i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log("Even");
+//   } else {
+//     console.log("odd");
+//   }
+// }
+
+// let n = 9;
+
+// for (let i = 1; i <= n; i++) {
+  // if (i === 2) {
+  //   continue;
+  // }
+  // if (i === 4) {
+  //   continue;
+  // }
+  // if (i === 6) {
+  //   continue;
+  // }
+  // if (i === 8) {
+  //   continue;
+  // }
+
+  // if (i % 2 === 0) {
+  //   continue;
+  // }
+
+//   let row = "";
+
+//   for (let j = 0; j < (n - i) / 2; j++) {
+//     row += " ";
+//   }
+//   for (let j = 0; j < i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+// for (let i = n - 2; i >= 1; i--) {
+//   if (i % 2 === 0) {
+//     continue;
+//   }
+
+//   let row = "";
+
+//   for (let j = 0; j < (n - i) / 2; j++) {
+//     row += " ";
+//   }
+//   for (let j = 0; j < i; j++) {
+//     row += "*";
+//   }
+//   console.log(row);
+// }
+
+
+
+
+
