@@ -1768,22 +1768,22 @@
 // let n = 9;
 
 // for (let i = 1; i <= n; i++) {
-  // if (i === 2) {
-  //   continue;
-  // }
-  // if (i === 4) {
-  //   continue;
-  // }
-  // if (i === 6) {
-  //   continue;
-  // }
-  // if (i === 8) {
-  //   continue;
-  // }
+// if (i === 2) {
+//   continue;
+// }
+// if (i === 4) {
+//   continue;
+// }
+// if (i === 6) {
+//   continue;
+// }
+// if (i === 8) {
+//   continue;
+// }
 
-  // if (i % 2 === 0) {
-  //   continue;
-  // }
+// if (i % 2 === 0) {
+//   continue;
+// }
 
 //   let row = "";
 
@@ -1811,6 +1811,146 @@
 //   }
 //   console.log(row);
 // }
+
+// let arr = [1, 25, 7, 8, 9, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length - 1; j++) {
+//     if (arr[j] > arr[j + 1]) {
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(arr);
+
+// let arr = [9, 1, 6, 4];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr.length - 1; j++) {
+//     if (arr[j] < arr[j + 1]) {
+//       let temp = arr[j];
+//       arr[j] = arr[j + 1];
+//       arr[j + 1] = temp;
+//     }
+//   }
+// }
+
+// console.log(arr);
+
+// let arr = [5, 9, 2, 15, 7];
+
+// let max = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+
+// console.log(max);
+
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//   let row = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// let n = 5;
+
+// for (let i = n; i >= 1; i--) {
+//   let row = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//   let row = "";
+
+//   for (let j = 1; j <= n - i; j++) {
+//     row += " ";
+//   }
+
+//   for (let k = 1; k <= 2 * i - 1; k++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// for (let i = n - 1; i >= 1; i--) {
+//   let row = "";
+
+//   for (let j = 1; j <= n - i; j++) {
+//     row += " ";
+//   }
+
+//   for (let k = 1; k <= 2 * i - 1; k++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// let n = 5;
+
+// for (let i = 1; i <= 2 * n - 1; i++) {
+//   let row = "";
+
+//   // yeh decide karega actual row number
+//   let totalCols = i <= n ? i : 2 * n - i;
+
+//   // spaces
+//   for (let j = 1; j <= n - totalCols; j++) {
+//     row += " ";
+//   }
+
+//   // stars
+//   for (let k = 1; k <= 2 * totalCols - 1; k++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+
+
+// let arr = [1, 2, 3, 2, 4, 1, 5];
+// let duplicates = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let alreadyFound = false;
+//   for (let d = 0; d < duplicates.length; d++) {
+//     if (duplicates[d] === arr[i]) {
+//       alreadyFound = true;
+//       break;
+//     }
+//   }  
+
+//   if (alreadyFound) continue;
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] === arr[j]) {
+//       duplicates.push(arr[i]);
+//       break;
+//     }
+//   }
+// }
+
+// console.log("Duplicates:", duplicates);
+
 
 
 
