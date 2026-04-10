@@ -1926,8 +1926,6 @@
 //   console.log(row);
 // }
 
-
-
 // let arr = [1, 2, 3, 2, 4, 1, 5];
 // let duplicates = [];
 
@@ -1938,7 +1936,7 @@
 //       alreadyFound = true;
 //       break;
 //     }
-//   }  
+//   }
 
 //   if (alreadyFound) continue;
 //   for (let j = i + 1; j < arr.length; j++) {
@@ -1951,8 +1949,83 @@
 
 // console.log("Duplicates:", duplicates);
 
+// ---------------object problem --------------------
 
+// let car = {
+//   brand: "Toyota",
+//   model: 2025,
+//   year: 2025,
+// };
+// console.log(car.brand);
 
+// let student = {
+//   name: "Awais",
+//   marks: [80, 90, 70],
+// };
+// let total = student.marks.reduce((acc, curr) => acc + curr);
+// console.log(total);
 
+// let average = total / 3;
+
+// console.log(average);
+
+// let product = {
+//   name: "Awais",
+//   price: 2000,
+//   discount: 90,
+// };
+// let { name, price, discount } = product;
+
+// let finalPrice = price - (price * discount) / 100;
+
+// console.log(finalPrice);
+// let bankAccount = {
+//   name: "Awais",
+//   balance: 3000,
+
+//   deposit: function (amount) {
+//     if (amount <= 0) {
+//       console.log("Error: Deposit amount must be positive.");
+//     } else {
+//       this.balance += amount;
+//       console.log(`Deposited: ${amount}, New Balance: ${this.balance}`);
+//     }
+//   },
+
+//   withdraw: function (amount) {
+//     if (amount <= 0) {
+//       console.log("Error: Withdrawal amount must be positive.");
+//     } else if (amount > this.balance) {
+//       console.log(
+//         `Error: Insufficient funds. Current balance: ${this.balance}`
+//       );
+//     } else {
+//       this.balance -= amount;
+//       console.log(`Withdrawn: ${amount}, Remaining Balance: ${this.balance}`);
+//     }
+//   },
+// };
+
+// bankAccount.deposit(500);
+// bankAccount.withdraw(1000);
+
+// console.log("5" - 3); // ?
+// console.log("5" + 3); // ?
+// console.log("5" * "2"); // ?
+// console.log("5" / 2); // ?
+
+// for (let i = 1; i <= 10; i++) {
+//   if (i === 7) {
+//     // break;
+//     // continue;
+//   }
+//   console.log(i);
+// }
+
+// console.log([] = {} ? "true" : "false");
+
+// (function () {
+//   console.log("IIFE is running");
+// })();
 
 
