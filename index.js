@@ -963,7 +963,7 @@
 // flase true flase true flase true false true false true
 //  2 4 6 8 10
 
-// Manual Promise
+// // Manual Promise
 // let mypromise = new Promise((resolve, reject) => {
 //   let success = true;
 //   if (success) {
@@ -980,7 +980,7 @@
 //     console.log("result");
 //   })
 //   .catch(() => {
-//     console.log("error;
+//     console.log("error");
 //   });
 
 // async function test() {
@@ -2028,4 +2028,34 @@
 //   console.log("IIFE is running");
 // })();
 
+// hoistedVariable = 3;
+// console.log(hoistedVariable);
+// var hoistedVariable;
+
+// function executeFunction(func) {
+//   return func();
+// }
+
+// executeFunction(function () {
+//   console.log("hello");
+// });
+
+// let obj = {
+//   name: "Awais",
+//   check: function () {
+//     return console.log(this.name);
+//   },
+// };
+// obj.check();
+
+// (function () {
+//   console.log("IIFE is running");
+// })();
+
+// for (var j = 0; j < 2; j++) {
+// }
+// console.log(j); // Outputs 2
+
+
+console.log()
 
