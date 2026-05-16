@@ -50,6 +50,9 @@
 
 // console.log(result);
 
+// console.log(typeof null);
 
-
-
+function doSomething() {
+  console.log(this);
+}
+doSomething();
