@@ -52,7 +52,8 @@
 
 // console.log(typeof null);
 
-function doSomething() {
-  console.log(this);
-}
-doSomething();
+// function doSomething() {
+//   console.log(this);
+// }
+// doSomething();
+
