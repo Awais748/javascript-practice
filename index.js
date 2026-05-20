@@ -2057,5 +2057,5 @@
 // console.log(j); // Outputs 2
 
 
-console.log("hellow world")
+// console.log("hellow world")
 

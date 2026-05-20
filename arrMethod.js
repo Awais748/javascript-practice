@@ -57,3 +57,57 @@
 // }
 // doSomething();
 
+// console.log(!"");
+// console.log(!!"hellow");
+
+// let a = 1;
+// let b = a++;
+// console.log(a, b);
+
+// let obj = { a: 1 };
+// let arr = [obj];
+// arr[0].a = 99;
+// console.log(obj);
+
+// let input = [0, 1, 0, 3, 12];
+
+// result = input.filter((x) => x !== 0).concat(input.filter((x) => x === 0));
+// let result = [];
+// let zeroResult = [];
+// for (let i of input) {
+//   if (i !== 0) {
+//     result.push(i);
+//   } else {
+//     zeroResult.push(i);
+//   }
+// }
+// console.log(result.concat(zeroResult));
+
+// output = [1,3,12,0,0]
+
+// input = "aabbccdd";
+// // result = input[6];
+
+// let seen = new Set();
+// for (let i of input) {
+//   if (seen.has(i)) {
+//     result = i;
+//   }
+//   seen.add(i);
+// }
+
+// console.log(result);
+
+// output : d
+
+// let text = "I love javascript";
+// let result = text.split(" ").reverse().join("");
+// console.log(result);
+let input = [1, 2, 3, 4, 5];
+let output = [];
+
+for (let i = 0; i < input.length; i += 2) {
+  output.push([input[i], input[i + 1]].filter(Boolean));
+}
+
+console.log(output);
