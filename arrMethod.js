@@ -3,6 +3,8 @@
 //   return e * null;
 // });
 
+// const { object } = require("prop-types");
+
 // console.log(result);
 
 // let result = arr.map((e) => {
@@ -103,11 +105,104 @@
 // let text = "I love javascript";
 // let result = text.split(" ").reverse().join("");
 // console.log(result);
-let input = [1, 2, 3, 4, 5];
-let output = [];
+// let input = [1, 2, 3, 4, 5];
+// let output = [];
 
-for (let i = 0; i < input.length; i += 2) {
-  output.push([input[i], input[i + 1]].filter(Boolean));
-}
+// for (let i = 0; i < input.length; i += 2) {
+//   output.push([input[i], input[i + 1]].filter(Boolean));
+// }
 
-console.log(output);
+// console.log(output);
+
+// string = "hello world";
+// let reserved = "";
+// for (let i of string) {
+//   reserved = i + reserved;
+// }
+
+// console.log(reserved);
+
+// const input = [1, 2, 2, 3, 3, 3, 4];
+// let obj = {};
+
+// for (let i of input) {
+//   if (obj[i]) {
+//     obj[i] = obj[i] + 1;
+//   } else {
+//     obj[i] = 1;
+//   }
+// }
+
+// let maxCount = 0;
+// let answer = null;
+
+// for (let key in obj) {
+//   if (obj[key] > maxCount) {
+//     maxCount = obj[key];
+//     answer = key;
+//   }
+// }
+
+// console.log(answer); // "3"
+
+// const input = "racecar";
+// let result = input.split("").reverse().join("");
+// if (input === result) {
+//   console.log("Palindrome");
+// } else {
+//   console.log("Not a palindrome");
+// }
+
+// input = [1, 2, 3, 4, 5];
+// result = null;
+// for (let i of input) {
+//   result += i;
+// }
+// console.log(result);
+
+// input = [1, 2, 3, 4];
+// let result = input.map((x) => x * x);
+// console.log(result);
+
+// let arr = [5, 12, 3, 18, 7, 25];
+// let result = arr.filter((x) => x >= 10);
+// console.log(result);
+
+// let arr = [1, 2, 3, 4];
+// let result = arr.reduce((acc, curr) => acc * curr);
+// console.log(result);
+
+// input = [1, 3, 4, 6, 7];
+// result = input.find((x) => x % 2 == 0);
+// console.log(result);
+
+// input = [1, 2, 3];
+// // result = input.some((x) => x < 0);
+// result = input.every((x) => x > 0);
+// console.log(result);
+
+// let input = [10, 20, 30, 40, 50];
+// let result = input.slice(1, 4);
+// console.log(result);
+
+// let input = { name: "Ali", age: 20, city: "Lahore" };
+
+// let result = Object.keys(input);
+// let result2 = Object.values(input);
+// console.log(result);
+// console.log(result2);
+
+input = [
+  { name: "Ali", age: 20 },
+  { name: "Sara", age: 16 },
+  { name: "Ahmed", age: 25 },
+];
+// for (let i of input) {
+//   if (i[age] >= 20) {
+//     console.log(i);
+//   }
+// }
+let result = input
+  .filter((person) => person.age >= 18)
+  .map((v) => v.name.toUpperCase());
+console.log(result);
